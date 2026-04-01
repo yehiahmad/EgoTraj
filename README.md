@@ -16,7 +16,6 @@
 
 ---
 
-<div align="center">
 <img src="assets/gifs/egocnetric_informed_gaze_human_motion_prediction_objective.gif" width="100%" alt="EgoTraj Overview: Egocentric gaze-informed human motion prediction">
 
 </div>
