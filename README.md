@@ -62,13 +62,11 @@ The EgoTraj pipeline encompasses the full workflow from data collection through 
 
 <div align="center">
 
-https://github.com/user-attachments/assets/ped_pred.mp4
+https://github.com/yehiahmad/EgoTraj/raw/main/assets/videos/ped_pred.mp4
 
 *Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
 
 </div>
-
-> **Note:** If the video does not render above, you can download it directly from [`assets/videos/ped_pred.mp4`](assets/videos/ped_pred.mp4).
 
 ---
 
