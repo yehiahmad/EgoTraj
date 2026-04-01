@@ -4,7 +4,7 @@
 
 ### ECCV 2026
 
-[Ahmad Yehia]()\*, [Abduallah Mohamed]()\*, [Tianyi Wang](), [Kun Qian](), [Jiseop Byeon](), [Junfeng Jiao](), [Christian Claudel]()
+[Ahmad Yehia](), [Abduallah Mohamed](), [Tianyi Wang](), [Jiseop Byeon](), [Kun Qian](), [Junfeng Jiao](), [Christian Claudel]()
 
 **The University of Texas at Austin**
 
@@ -93,34 +93,27 @@ A custom Unity application interfaces with the built-in SLAM system and records 
 ### Participant Diversity
 
 <div align="center">
-<img src="assets/figures/egotraj_dataset_stat.png" width="90%" alt="Dataset Statistics">
-</div>
-
-- **75 participants**, each contributing exactly one session
-- Gender-balanced cohort, ages **18--38**
-- **14 nationalities** represented
-- All with normal or corrected-to-normal vision
-
-<div align="center">
 <img src="assets/figures/egotraj_gender_nationality.png" width="45%" alt="Gender and Nationality Distribution">
 <img src="assets/figures/egotraj_chord_gender_age.png" width="45%" alt="Gender-Age Chord Diagram">
 </div>
 
-### Dataset Scale
+---
 
-| Metric | Value |
-|:---|:---|
-| Total sessions | 75 |
-| Total duration | 10.7 hours |
-| Total frames | 1.15M |
-| Cumulative walking distance | 46.73 km |
-| Mean walking speed | 1.25 m/s |
-| Annotated frames (VLM) | 38,606 |
-| Frame rate | 30 Hz |
+## Dataset Comparison
 
-<div align="center">
-<img src="assets/figures/egotraj_per_session_speed.png" width="70%" alt="Per-Session Speed Distribution">
-</div>
+EgoTraj compared against existing egocentric trajectory datasets:
+
+| Dataset | Year | Setting | Hours | Frames | Subjects | Gaze | IMU | 6DoF | Scene Ann. |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| KrishnaCam | 2016 | Outdoor | 70.0 | 7.6M | 1 | - | Y | - | - |
+| EgoMotion | 2016 | In+Out | 9.1 | 65.5K | N/P | - | - | - | - |
+| FPL | 2018 | Outdoor | 4.5 | 162K | N/P | - | - | - | - |
+| Nymeria | 2024 | In+Out | 300 | 32.4M | 264 | Y | Y | Y | Y |
+| EgoNav | 2024 | In+Out | 3.3 | 237.6K | N/P | - | Y | Y | - |
+| LookOut | 2025 | In+Out | 4.0 | 288K | N/P | Y | Y | Y | - |
+| EgoCogNav | 2025 | In+Out | 6.0 | 432K | 17 | Y | Y | Y | - |
+| **EgoTraj (Ours)** | **2025** | **Outdoor** | **10.7** | **1.15M** | **75** | **Y** | **Y** | **Y** | **Y** |
+
 
 ---
 
@@ -204,52 +197,6 @@ Using CXA-Transformer as the base architecture to analyze the contribution of ea
 </div>
 
 *Trajectory predictions from multiple baselines on three test scenarios. Left: gentle segment. Center: moderate turn. Right: sharp ~90 degree intersection turn where all baselines underestimate the turning magnitude.*
-
----
-
-## Dataset Comparison
-
-EgoTraj compared against existing egocentric trajectory datasets:
-
-| Dataset | Year | Setting | Hours | Frames | Subjects | Gaze | IMU | 6DoF | Scene Ann. |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| KrishnaCam | 2016 | Outdoor | 70.0 | 7.6M | 1 | - | Y | - | - |
-| EgoMotion | 2016 | In+Out | 9.1 | 65.5K | N/P | - | - | - | - |
-| FPL | 2018 | Outdoor | 4.5 | 162K | N/P | - | - | - | - |
-| Nymeria | 2024 | In+Out | 300 | 32.4M | 264 | Y | Y | Y | Y |
-| EgoNav | 2024 | In+Out | 3.3 | 237.6K | N/P | - | Y | Y | - |
-| LookOut | 2025 | In+Out | 4.0 | 288K | N/P | Y | Y | Y | - |
-| EgoCogNav | 2025 | In+Out | 6.0 | 432K | 17 | Y | Y | Y | - |
-| **EgoTraj (Ours)** | **2025** | **Outdoor** | **10.7** | **1.15M** | **75** | **Y** | **Y** | **Y** | **Y** |
-
----
-
-## Repository Structure
-
-```
-EgoTraj/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── assets/
-│   ├── figures/            # All paper figures
-│   │   ├── egotraj_intro.png
-│   │   ├── egotraj_dataset_stat.png
-│   │   ├── egotraj_multimodal.png
-│   │   ├── egotraj_qualitative.png
-│   │   ├── egotraj_annotation.png
-│   │   ├── egotraj_calibration.png
-│   │   ├── egoviz_dashboard.png
-│   │   └── ...
-│   ├── gifs/               # Animated visualizations
-│   │   ├── egocnetric_informed_gaze_human_motion_prediction_objective.gif
-│   │   └── egotraj_paper_summary.gif
-│   ├── videos/             # Demo videos
-│   │   └── ped_pred.mp4
-│   └── paper/              # Paper PDFs
-│       ├── ECCV_2026.pdf
-│       └── ECCV_2026__supplement.pdf
-```
 
 ---
 
