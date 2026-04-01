@@ -58,18 +58,6 @@ The EgoTraj pipeline encompasses the full workflow from data collection through 
 
 ---
 
-## Egocentric Trajectory Prediction Demo
-
-<div align="center">
-
-https://github.com/yehiahmad/EgoTraj/raw/main/assets/videos/ped_pred.mp4
-
-*Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
-
-</div>
-
----
-
 ## Dataset Details
 
 ### Recording Setup
@@ -198,6 +186,17 @@ Using CXA-Transformer as the base architecture to analyze the contribution of ea
 
 *Trajectory predictions from multiple baselines on three test scenarios. Left: gentle segment. Center: moderate turn. Right: sharp ~90 degree intersection turn where all baselines underestimate the turning magnitude.*
 
+---
+
+## Egocentric Trajectory Prediction Demo
+
+<div align="center">
+
+https://github.com/yehiahmad/EgoTraj/raw/main/assets/videos/ped_pred.mp4
+
+*Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
+
+</div>
 ---
 
 ## Data Release
