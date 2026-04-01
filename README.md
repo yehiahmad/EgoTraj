@@ -141,7 +141,7 @@ Structured egocentric scene descriptions are generated using **Qwen2.5-VL-7B-Ins
 We developed **EgoViz**, an interactive visualization and inspection tool for the EgoTraj dataset, synchronizing four complementary views: trajectory plot, BEV path, egocentric RGB frame, and VLM scene annotation.
 
 <div align="center">
-<img src="assets/figures/egoviz_dashboard.png" width="100%" alt="EgoViz Dashboard">
+<img src="assets/figures/egoviz_dashboard.png" width="60%" alt="EgoViz Dashboard">
 </div>
 
 > The **EgoViz Dashboard** will be publicly released alongside the dataset after publication.
