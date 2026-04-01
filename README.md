@@ -229,12 +229,12 @@ This project is licensed under the **MASSLab_UT_AUSTIN** License. See [LICENSE](
 
 ## Acknowledgements
 
-We thank all 75 participants who volunteered for data collection. This study was approved by an Institutional Review Board (IRB). All recordings were privacy-filtered using [EgoBlur](https://github.com/facebookresearch/EgoBlur) for face and license plate de-identification.
+This work is supported by Honda Development and Manufacturing of America, LLC. The authors would like to thank all 75 participants who volunteered for data collection. This study was approved by an Institutional Review Board (IRB). All recordings were privacy-filtered using [EgoBlur](https://github.com/facebookresearch/EgoBlur) for face and license plate de-identification.
 
 ---
 
 <div align="center">
 
-**[MASSLab @ The University of Texas at Austin]()**
+**[MASSLab @ UTAustin]()**
 
 </div>
