@@ -194,7 +194,7 @@ Using CXA-Transformer as the base architecture to analyze the contribution of ea
 
 ## Egocentric Trajectory Prediction Demo
 
-[![Watch the demo](assets/gifs/egotraj_paper_summary.gif)](https://github.com/yehiahmad/EgoTraj/raw/main/assets/videos/ped_pred.mp4)
+[![Watch the demo]](https://github.com/yehiahmad/EgoTraj/raw/main/assets/videos/ped_pred.mp4)
 
 *Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
 
