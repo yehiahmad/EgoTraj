@@ -91,16 +91,16 @@ A custom Unity application interfaces with the built-in SLAM system and records 
 
 EgoTraj compared against existing egocentric trajectory datasets:
 
-| Dataset | Year | Setting | Hours | Frames | Subjects | Gaze | IMU | 6DoF | Scene Ann. |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| KrishnaCam | 2016 | Outdoor | 70.0 | 7.6M | 1 | - | Y | - | - |
-| EgoMotion | 2016 | In+Out | 9.1 | 65.5K | N/P | - | - | - | - |
-| FPL | 2018 | Outdoor | 4.5 | 162K | N/P | - | - | - | - |
-| Nymeria | 2024 | In+Out | 300 | 32.4M | 264 | Y | Y | Y | Y |
-| EgoNav | 2024 | In+Out | 3.3 | 237.6K | N/P | - | Y | Y | - |
-| LookOut | 2025 | In+Out | 4.0 | 288K | N/P | Y | Y | Y | - |
-| EgoCogNav | 2025 | In+Out | 6.0 | 432K | 17 | Y | Y | Y | - |
-| **EgoTraj (Ours)** | **2025** | **Outdoor** | **10.7** | **1.15M** | **75** | **Y** | **Y** | **Y** | **Y** |
+| Dataset | Year | Setting | Hours | Frames | Subjects | Gaze | 6DoF | Scene Ann. |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| KrishnaCam | 2016 | Outdoor | 70.0 | 7.6M | 1 | - | - | - |
+| EgoMotion | 2016 | In+Out | 9.1 | 65.5K | N/P | - | - | - |
+| FPL | 2018 | Outdoor | 4.5 | 162K | N/P | - | - | - |
+| Nymeria | 2024 | In+Out | 300 | 32.4M | 264 | Y | Y | Y |
+| EgoNav | 2024 | In+Out | 3.3 | 237.6K | N/P | - | Y | - |
+| LookOut | 2025 | In+Out | 4.0 | 288K | N/P | Y | Y | - |
+| EgoCogNav | 2025 | In+Out | 6.0 | 432K | 17 | Y | Y | - |
+| **EgoTraj (Ours)** | **2025** | **Outdoor** | **10.7** | **1.15M** | **75** | **Y** | **Y** | **Y** |
 
 
 ---
