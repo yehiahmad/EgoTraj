@@ -197,6 +197,7 @@ https://github.com/yehiahmad/EgoTraj/raw/main/assets/videos/ped_pred.mp4
 *Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
 
 </div>
+
 ---
 
 ## Data Release
