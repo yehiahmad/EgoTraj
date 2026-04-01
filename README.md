@@ -190,10 +190,6 @@ Using CXA-Transformer as the base architecture to analyze the contribution of ea
 
 ## Egocentric Trajectory Prediction Demo
 
-<div align="center">
-
-## Egocentric Trajectory Prediction Demo
-
 <img src="assets/gifs/ped_pred.gif" width="50%" alt="Egoecntric gaze-informed human trajectory prediction">
 
 </div>
