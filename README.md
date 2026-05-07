@@ -82,7 +82,7 @@ A custom Unity application interfaces with the built-in SLAM system and records 
 
 <div align="center">
 <img src="assets/figures/egotraj_gender_nationality.png" width="45%" alt="Gender and Nationality Distribution">
-<img src="assets/figures/egotraj_chord_gender_age.png" width="45%" alt="Gender-Age Chord Diagram">
+<img src="assets/figures/egotraj_chord_gender_age.png" width="40%" alt="Gender-Age Chord Diagram">
 </div>
 
 ---
