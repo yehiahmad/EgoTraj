@@ -2,7 +2,7 @@
 
 # EgoTraj: Real-World Egocentric Human Trajectory Multimodal Dataset
 
-### ECCV 2026
+### Accepted to ECCV 2026
 
 [Ahmad Yehia](), [Abduallah Mohamed](), [Tianyi Wang](), [Jiseop Byeon](), [Kun Qian](), [Junfeng Jiao](), [Christian Claudel]()
 
@@ -100,7 +100,7 @@ EgoTraj compared against existing egocentric trajectory datasets:
 | EgoNav | 2024 | In+Out | 3.3 | 237.6K | N/P | - | Y | - |
 | LookOut | 2025 | In+Out | 4.0 | 288K | N/P | Y | Y | - |
 | EgoCogNav | 2025 | In+Out | 6.0 | 432K | 17 | Y | Y | - |
-| **EgoTraj (Ours)** | **2025** | **Outdoor** | **10.7** | **1.15M** | **75** | **Y** | **Y** | **Y** |
+| **EgoTraj (Ours)** | **2026** | **Outdoor** | **10.7** | **1.15M** | **75** | **Y** | **Y** | **Y** |
 
 
 ---
@@ -213,7 +213,7 @@ If you find this work useful, please cite our paper:
 ```bibtex
 @inproceedings{yehia2026egotraj,
   title     = {EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction},
-  author    = {Yehia, Ahmad and Mohamed, Abduallah and Wang, Tianyi and Qian, Kun and Byeon, Jiseop and Jiao, Junfeng and Claudel, Christian},
+  author    = {Yehia, Ahmad and Mohamed, Abduallah and Wang, Tianyi and Byeon, Jiseop and Qian, Kun and Jiao, Junfeng and Claudel, Christian},
   booktitle = {European Conference on Computer Vision (ECCV)},
   year      = {2026}
 }
