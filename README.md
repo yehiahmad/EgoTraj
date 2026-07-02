@@ -245,4 +245,4 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ## Acknowledgements
 
-This work was supported by Honda Development & Manufacturing of America, LLC. We thank Jorge Monsivais, Haithi Donahue, and Steven Feit of the Emerging Technology Department for their contributions. We are also grateful to Kristen Grauman at UT Austin for her guidance throughout the data collection.
+This work was supported by Honda Development & Manufacturing of America, LLC. We thank Jorge Monsivais, Haithi Donahue, and Steven Feit of the Emerging Technology Department for their contributions. We are also grateful to [Kristen Grauman](https://www.cs.utexas.edu/~grauman/) at UT Austin for her guidance throughout the data collection.
