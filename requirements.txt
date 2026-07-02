@@ -1,0 +1,7 @@
+# EgoViz dashboard dependencies
+numpy
+pandas
+opencv-python
+pillow
+h5py
+# tkinter ships with standard CPython; on Debian/Ubuntu: apt-get install python3-tk

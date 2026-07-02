@@ -144,7 +144,7 @@ We developed **EgoViz**, an interactive visualization and inspection tool for th
 <img src="assets/figures/egoviz_dashboard.png" width="60%" alt="EgoViz Dashboard">
 </div>
 
-> The **EgoViz Dashboard** is publicly available alongside the dataset.
+> EgoViz ships with this repo as [`ego_viz.py`](ego_viz.py). See [Dataset Download &amp; Format](#dataset-download--format) below to get the data and run it.
 
 ---
 
@@ -216,6 +216,67 @@ To examine how well the multimodal models generalize beyond the random-participa
 
 
 *Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
+
+---
+
+## Dataset Download & Format
+
+**Download:** [EgoTraj dataset (UT Box)](https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph)
+
+EgoTraj is distributed as two lightweight files plus the RGB video (hosted separately).
+
+### `egotraj_dataset.h5`
+
+One HDF5 group per session (named by capture timestamp). Each session contains:
+- **Head pose** — `pose/position` (N×3, meters), `pose/rotation` (N×4 quaternion, `qw,qx,qy,qz`), `pose/velocity`, `pose/angular_velocity`, `pose/timestamp` (epoch seconds).
+- **Gaze** — `gaze/direction` (N×3 unit vectors) and `gaze/origin` (N×3).
+- **Video pointers** — `video/segment`, `video/frame`, `video/has_video`, mapping each pose sample to a frame in the blurred video.
+- **Route waypoints** (group attributes) — `waypoint_start`, `waypoint_end`, `from`, `to`.
+
+> **Coordinate note:** **Y is the up-axis** (height). The ground plane is `(x, z)`. Positions are **session-relative** — each session has its own local origin — and are **not** absolute or geographic coordinates. Do not compare raw positions across sessions as if they share a global frame.
+
+### `egotraj_annotations.json`
+
+A list of per-frame scene annotations sampled at 1 fps. Each record has `session`, `pose_idx` (the join key back into the H5), `timestamp`, `second`, `gaze_dot` (the detected gaze-marker location, or `null` if off-frame), and `annotation` (a short scene description covering context, the gaze target, and inferred intent).
+
+To join an annotation to its trajectory and gaze, index the session's H5 datasets at `pose_idx`.
+
+### Video (hosted separately)
+
+Privacy-blurred egocentric video, per-session folders, referenced by the H5 pointers. See the download link above. The red gaze dot is rendered into the video at capture time.
+
+### Using the EgoViz Dashboard
+
+[`ego_viz.py`](ego_viz.py) is an interactive dashboard that synchronizes four views for a session: the local trajectory plot, the full-path minimap, the egocentric video frame, and the scene annotation.
+
+**Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+`tkinter` ships with standard CPython; on Debian/Ubuntu install it with `apt-get install python3-tk`.
+
+**Run on a session:**
+
+```bash
+python ego_viz.py \
+  --h5 egotraj_dataset.h5 \
+  --session 20251020_163423 \
+  --videos-root videos/ \
+  --annotations-json egotraj_annotations.json
+```
+
+| Flag | Description |
+|:---|:---|
+| `--h5` | Path to `egotraj_dataset.h5`. |
+| `--session` | Session key = HDF5 group name (e.g. `20251020_163423`). |
+| `--videos-root` | Parent folder of per-session video subfolders (each holding `video_*_part*.mp4`); enables the session dropdown. Use `--videos <folder>` to point at a single session's videos instead. |
+| `--annotations-json` | Path to `egotraj_annotations.json`; the matching annotation is shown for the current second. |
+
+Trajectory-only mode works without video or annotations — just pass `--h5` and `--session`.
+
+**Controls:** &larr;/&rarr; step by one point, &uarr;/&darr; by 10, PgUp/PgDn by 100, Home/End jump to start/end; mouse wheel zooms, right-click + drag pans; press **H** or **?** for the full shortcut list (including QC/editing keys), **Q**/**Esc** to quit.
 
 ---
 
