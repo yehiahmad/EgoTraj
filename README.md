@@ -4,17 +4,15 @@
 
 ### Accepted to ECCV 2026
 
-Ahmad Yehia<sup>1,*</sup>, Abduallah Mohamed<sup>2,*</sup>, Tianyi Wang<sup>1</sup>, Jiseop Byeon<sup>1</sup>, Kun Qian<sup>3</sup>, Junfeng Jiao<sup>1</sup>, Christian Claudel<sup>1</sup>
+Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>1</sup>, Jiseop Byeon<sup>1</sup>, Kun Qian<sup>3</sup>, Junfeng Jiao<sup>1</sup>, Christian Claudel<sup>1</sup>
 
 <sup>1</sup>The University of Texas at Austin, Austin, TX 78712, USA &nbsp;&nbsp; <sup>2</sup>AIDAChip Inc. &nbsp;&nbsp; <sup>3</sup>Unity AI Technologies
-
-<sub>* These authors contributed equally to this work.</sub>
 
 <a href="https://arxiv.org/abs/2605.19004"><img src="https://img.shields.io/badge/arXiv-2605.19004-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 <a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
 <a href="https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph"><img src="https://img.shields.io/badge/Dataset-Download-orange?logo=box&logoColor=white" alt="Dataset Download"></a>
 <img src="https://img.shields.io/badge/Conference-ECCV%202026-purple" alt="ECCV 2026">
-<img src="https://img.shields.io/badge/License-MASSLab__UT__AUSTIN-green" alt="License">
+<img src="https://img.shields.io/badge/License-MIT-green" alt="License">
 
 ---
 
@@ -146,7 +144,7 @@ We developed **EgoViz**, an interactive visualization and inspection tool for th
 <img src="assets/figures/egoviz_dashboard.png" width="60%" alt="EgoViz Dashboard">
 </div>
 
-> The **EgoViz Dashboard** will be publicly released alongside the dataset after publication.
+> The **EgoViz Dashboard** is publicly available alongside the dataset.
 
 ---
 
@@ -241,18 +239,10 @@ If you find this work useful, please cite our paper:
 
 ## License
 
-This project is licensed under the **MASSLab_UT_AUSTIN** License. See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
 ## Acknowledgements
 
-This work is supported by Honda Development and Manufacturing of America, LLC. The authors would like to thank all 75 participants who volunteered for data collection. This study was approved by an Institutional Review Board (IRB). All recordings were privacy-filtered using [EgoBlur](https://github.com/facebookresearch/EgoBlur) for face and license plate de-identification.
-
----
-
-<div align="center">
-
-**[MASSLab @ UTAustin]()**
-
-</div>
+This work was supported by Honda Development & Manufacturing of America, LLC. We thank Jorge Monsivais, Haithi Donahue, and Steven Feit of the Emerging Technology Department for their contributions. We are also grateful to Kristen Grauman at UT Austin for her guidance throughout the data collection.

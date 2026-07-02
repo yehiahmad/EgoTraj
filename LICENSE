@@ -1,36 +1,21 @@
-MASSLab_UT_AUSTIN License
+MIT License
 
 Copyright (c) 2026 MASSLab, The University of Texas at Austin
 
-All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Permission is hereby granted to use, copy, and modify the contents of this
-repository for academic and non-commercial research purposes only, subject to
-the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1. ACADEMIC USE ONLY
-   This software, dataset, and associated documentation files (the "Materials")
-   may be used solely for academic research, educational purposes, and
-   non-commercial applications.
-
-2. ATTRIBUTION
-   Any publications, presentations, or works that use or reference the Materials
-   must cite the associated paper:
-
-   Ahmad Yehia, Abduallah Mohamed, Tianyi Wang, Kun Qian, Jiseop Byeon,
-   Junfeng Jiao, and Christian Claudel. "EgoTraj: Real-World Egocentric Human
-   Trajectory Dataset for Multimodal Prediction." 2026.
-
-3. NO COMMERCIAL USE
-   The Materials may not be used for commercial purposes without prior written
-   consent from the copyright holders. For commercial licensing inquiries,
-   please contact the MASSLab at The University of Texas at Austin.
-
-4. PRIVACY AND ETHICAL USE
-   Users of the dataset must comply with all applicable privacy laws and
-   regulations. The dataset must not be used for re-identification of
-   individuals, surveillance, or any purpose that may harm the privacy or
-   rights of the participants.
-
-For questions regarding licensing, dataset access, or collaboration, please
-contact the Ahmad Yehia @ MASSLab at The University of Texas at Austin.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
