@@ -233,7 +233,7 @@ One HDF5 group per session (named by capture timestamp). Each session contains:
 - **Video pointers** — `video/segment`, `video/frame`, `video/has_video`, mapping each pose sample to a frame in the blurred video.
 - **Route waypoints** (group attributes) — `waypoint_start`, `waypoint_end`, `from`, `to`.
 
-> **Coordinate note:** **Y is the up-axis** (height). The ground plane is `(x, z)`. Positions are **session-relative** — each session has its own local origin — and are **not** absolute or geographic coordinates. Do not compare raw positions across sessions as if they share a global frame.
+> **Coordinate note:** **Y is the up-axis** (height). The ground plane is `(x, z)`. Positions are **session-relative** — each session has its own local origin — and are **not** absolute or geographic coordinates.
 
 ### `egotraj_annotations.json`
 
