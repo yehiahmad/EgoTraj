@@ -223,18 +223,6 @@ To examine how well the multimodal models generalize beyond the random-participa
 
 **Download:** [EgoTraj dataset (UT Box)](https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph)
 
-```mermaid
-flowchart TD
-    BOX["📦 EgoTraj on UT Box"]
-    BOX --> H5["egotraj_dataset.h5<br/>75 sessions — pose + gaze + video pointers"]
-    BOX --> JSON["egotraj_annotations.json<br/>per-frame scene annotations @ 1 fps"]
-    BOX --> ZIPS["egotraj_videos_part1.zip … part5.zip<br/>privacy-blurred egocentric video"]
-    ZIPS -->|extract all 5 together| VID["videos/"]
-    VID --> S1["20251020_163423/<br/>video_*_part*.mp4"]
-    VID --> S2["20251020_164527/<br/>video_*_part*.mp4"]
-    VID --> S3["… one folder per session (75 total)"]
-```
-
 EgoTraj is distributed as two lightweight files plus the RGB video (hosted separately).
 
 ### `egotraj_dataset.h5`
