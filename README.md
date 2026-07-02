@@ -1,6 +1,6 @@
 <div align="center">
 
-# EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction
+# EgoTraj: Real-World Egocentric Human Trajectory Multimodal Dataset
 
 ### UnderReview 2026
 
