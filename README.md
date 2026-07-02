@@ -9,7 +9,7 @@
 **The University of Texas at Austin**
 
 <a href="https://arxiv.org/abs/2605.19004"><img src="https://img.shields.io/badge/arXiv-2605.19004-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="assets/paper/EgoTraj_ECCV2026.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
+<a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
 <img src="https://img.shields.io/badge/Conference-ECCV%202026-purple" alt="ECCV 2026">
 <img src="https://img.shields.io/badge/License-MASSLab__UT__AUSTIN-green" alt="License">
 <img src="https://img.shields.io/badge/Dataset-Coming%20Soon-orange" alt="Dataset">
