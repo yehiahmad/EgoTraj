@@ -12,6 +12,7 @@ Ahmad Yehia<sup>1,*</sup>, Abduallah Mohamed<sup>2,*</sup>, Tianyi Wang<sup>1</s
 
 <a href="https://arxiv.org/abs/2605.19004"><img src="https://img.shields.io/badge/arXiv-2605.19004-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 <a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
+<a href="https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph"><img src="https://img.shields.io/badge/Dataset-Download-orange?logo=box&logoColor=white" alt="Dataset Download"></a>
 <img src="https://img.shields.io/badge/Conference-ECCV%202026-purple" alt="ECCV 2026">
 <img src="https://img.shields.io/badge/License-MASSLab__UT__AUSTIN-green" alt="License">
 
@@ -163,21 +164,40 @@ We evaluate five methods on egocentric trajectory prediction (1.5s observation &
 | CXA-Transformer | 0.19 | 0.29 | **0.69** |
 | **EgoCast** | **0.16** | **0.28** | 0.78 |
 
-### Multimodal Ablation Study
+### Generalization Across Splits
 
-Using CXA-Transformer as the base architecture to analyze the contribution of each modality:
+To examine how well the multimodal models generalize beyond the random-participant split, we evaluated CXA-Transformer on two additional, stricter splits. The **waypoint-pair held-out split** reserves 3 of the 21 origin&ndash;destination pairs entirely for testing (*n* = 10 sessions), and the **unfamiliar split** reserves 8 of the 31 participants who reported being unfamiliar with the recording environment (*n* = 8 sessions). By construction, each session is contributed by a unique participant, so all three splits are subject-disjoint.
 
-| Modality | ADE (m) &darr; | FDE (m) &darr; | L1_head &darr; |
-|:---|:---:|:---:|:---:|
-| Y (ego-motion only) | 0.19 | 0.29 | 0.69 |
-| Y + G (gaze) | 0.15 | 0.26 | 0.69 |
-| Y + S (scene) | 0.16 | 0.26 | 0.74 |
-| Y + P (pose) | 0.17 | 0.27 | 0.77 |
-| Y + P + G | 0.12 | 0.24 | 0.63 |
-| Y + S + G | 0.12 | 0.25 | 0.65 |
-| **Y + P + S + G (full)** | **0.12** | **0.23** | **0.58** |
+<div align="center">
 
-**Key findings:** Gaze and scene segmentation provide the largest individual improvements. The full multimodal combination achieves the best results, demonstrating that visual attention provides predictive signal even on top of rich scene and social context.
+<table>
+<thead>
+<tr>
+<th rowspan="2">Modality</th>
+<th colspan="2">Random Participant (<i>n</i> = 8)</th>
+<th colspan="2">Waypoint Held-Out (<i>n</i> = 10)</th>
+<th colspan="2">Unfamiliar (<i>n</i> = 8)</th>
+</tr>
+<tr>
+<th>ADE &darr;</th><th>FDE &darr;</th>
+<th>ADE &darr;</th><th>FDE &darr;</th>
+<th>ADE &darr;</th><th>FDE &darr;</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Y</td><td>0.19<sub>±.014</sub></td><td>0.29<sub>±.021</sub></td><td>0.21<sub>±.018</sub></td><td>0.32<sub>±.024</sub></td><td>0.23<sub>±.019</sub></td><td>0.34<sub>±.027</sub></td></tr>
+<tr><td>Y + P</td><td>0.17<sub>±.011</sub></td><td>0.27<sub>±.019</sub></td><td>0.19<sub>±.015</sub></td><td>0.29<sub>±.022</sub></td><td>0.20<sub>±.013</sub></td><td>0.31<sub>±.020</sub></td></tr>
+<tr><td>Y + S</td><td>0.16<sub>±.013</sub></td><td>0.25<sub>±.014</sub></td><td>0.18<sub>±.012</sub></td><td>0.28<sub>±.018</sub></td><td>0.18<sub>±.016</sub></td><td>0.29<sub>±.023</sub></td></tr>
+<tr><td>Y + G</td><td>0.15<sub>±.009</sub></td><td>0.26<sub>±.017</sub></td><td>0.16<sub>±.014</sub></td><td>0.26<sub>±.013</sub></td><td>0.16<sub>±.010</sub></td><td>0.29<sub>±.018</sub></td></tr>
+<tr><td><b>Y + P + S + G</b></td><td><b>0.12</b><sub>±.008</sub></td><td><b>0.23</b><sub>±.012</sub></td><td><b>0.14</b><sub>±.010</sub></td><td><b>0.25</b><sub>±.011</sub></td><td><b>0.14</b><sub>±.012</sub></td><td><b>0.26</b><sub>±.014</sub></td></tr>
+</tbody>
+</table>
+
+</div>
+
+*Generalization across three test splits using CXA-Transformer. Values are ADE/FDE in meters with 95% bootstrap confidence intervals from 1000 resamples. Best per split in **bold**.*
+
+**Key findings:** The full multimodal configuration (Y + P + S + G) remains the strongest across all three splits, with a modest generalization gap (random-participant ADE 0.12 &rarr; waypoint-held-out ADE 0.14 &rarr; unfamiliar ADE 0.14). This indicates that the multimodal cues transfer to held-out landmark pairs and to participants unfamiliar with the area, rather than overfitting to specific route templates.
 
 ### Qualitative Results
 
@@ -198,12 +218,6 @@ Using CXA-Transformer as the base architecture to analyze the contribution of ea
 
 
 *Egocentric pedestrian trajectory prediction with projected gaze (red dot), detected human poses, depth estimation, and predicted future path overlaid on the egocentric RGB stream.*
-
----
-
-## Data Release
-
-> The **EgoTraj dataset** and the **EgoViz Dashboard** will be publicly released after publication. Stay tuned for updates.
 
 ---
 
