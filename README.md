@@ -8,8 +8,8 @@
 
 **The University of Texas at Austin**
 
-<a href="assets/paper/ECCV_2026.pdf"><img src="https://img.shields.io/badge/Paper-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper PDF"></a>
-<a href="assets/paper/ECCV_2026__supplement.pdf"><img src="https://img.shields.io/badge/Supplement-PDF-blue?logo=adobeacrobatreader&logoColor=white" alt="Supplement"></a>
+<a href="https://arxiv.org/abs/2605.19004"><img src="https://img.shields.io/badge/arXiv-2605.19004-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="assets/paper/EgoTraj_ECCV2026.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
 <img src="https://img.shields.io/badge/Conference-ECCV%202026-purple" alt="ECCV 2026">
 <img src="https://img.shields.io/badge/License-MASSLab__UT__AUSTIN-green" alt="License">
 <img src="https://img.shields.io/badge/Dataset-Coming%20Soon-orange" alt="Dataset">
@@ -215,7 +215,10 @@ If you find this work useful, please cite our paper:
   title     = {EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction},
   author    = {Yehia, Ahmad and Mohamed, Abduallah and Wang, Tianyi and Byeon, Jiseop and Qian, Kun and Jiao, Junfeng and Claudel, Christian},
   booktitle = {European Conference on Computer Vision (ECCV)},
-  year      = {2026}
+  year      = {2026},
+  eprint    = {2605.19004},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV}
 }
 ```
 
