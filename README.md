@@ -241,9 +241,11 @@ A list of per-frame scene annotations sampled at 1 fps. Each record has `session
 
 To join an annotation to its trajectory and gaze, index the session's H5 datasets at `pose_idx`.
 
-### Video (hosted separately)
+### Video (`egotraj_videos_part1.zip` … `egotraj_videos_part5.zip`)
 
-Privacy-blurred egocentric video, per-session folders, referenced by the H5 pointers. See the download link above. The red gaze dot is rendered into the video at capture time.
+Privacy-blurred egocentric video, organized into per-session folders and referenced by the H5 `video/segment` / `video/frame` pointers. The red gaze dot is rendered into the video at capture time.
+
+> ⚠️ **Download all five parts together.** The video is split across five archives (`egotraj_videos_part1.zip` through `egotraj_videos_part5.zip`); the set is only complete with all five. Download every part and extract them into a single shared `videos/` folder, then point EgoViz at it with `--videos-root videos/`.
 
 ### Using the EgoViz Dashboard
 
