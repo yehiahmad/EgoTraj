@@ -1,6 +1,6 @@
 <div align="center">
 
-# EgoTraj: Real-World Egocentric Human Trajectory Multimodal Dataset
+# EgoTraj: Real-World Multimodal Egocentric Human Trajectory Dataset
 
 ### Accepted to ECCV 2026
 
