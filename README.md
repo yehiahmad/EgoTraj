@@ -2,7 +2,7 @@
 
 # EgoTraj: Real-World Multimodal Egocentric Human Trajectory Dataset
 
-### Accepted to ECCV 2026
+### Published to ECCV 2026
 
 Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>1</sup>, Jiseop Byeon<sup>1</sup>, Kun Qian<sup>3</sup>, Junfeng Jiao<sup>1</sup>, Christian Claudel<sup>1</sup>
 
