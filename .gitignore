@@ -42,3 +42,6 @@ logs/
 # Temporary
 tmp/
 temp/
+
+# Test caches
+.pytest_cache/
