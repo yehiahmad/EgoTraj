@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egotraj"
+version = "1.0.0"
+description = "Loader for EgoTraj, a real-world egocentric human trajectory dataset with 6-DoF head pose, 3D eye gaze, RGB video and scene annotations (ECCV 2026)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Ahmad Yehia", email = "ahmad.yehia@utexas.edu" },
+    { name = "Abduallah Mohamed" },
+    { name = "Tianyi Wang" },
+    { name = "Jiseop Byeon" },
+    { name = "Kun Qian" },
+    { name = "Junfeng Jiao" },
+    { name = "Christian Claudel" },
+]
+keywords = [
+    "egocentric", "trajectory-prediction", "human-motion", "gaze", "eye-tracking",
+    "head-pose", "dataset", "meta-quest-pro", "multimodal", "eccv-2026",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+dependencies = ["numpy", "h5py"]
+
+[project.optional-dependencies]
+pandas = ["pandas"]
+viz = ["pandas", "opencv-python", "pillow"]
+test = ["pytest"]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2605.19004"
+Repository = "https://github.com/yehiahmad/EgoTraj"
+Dataset = "https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph"
+
+[tool.setuptools]
+packages = ["egotraj"]

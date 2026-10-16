@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use EgoTraj, please cite the paper below."
+title: "EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction"
+type: dataset
+repository-code: "https://github.com/yehiahmad/EgoTraj"
+url: "https://arxiv.org/abs/2605.19004"
+keywords:
+  - egocentric vision
+  - human trajectory prediction
+  - eye gaze
+  - head pose
+  - Meta Quest Pro
+  - dataset
+authors:
+  - family-names: Yehia
+    given-names: Ahmad
+    email: ahmad.yehia@utexas.edu
+    affiliation: "The University of Texas at Austin"
+  - family-names: Mohamed
+    given-names: Abduallah
+    affiliation: "Meta Reality Labs"
+  - family-names: Wang
+    given-names: Tianyi
+    affiliation: "The University of Texas at Austin"
+  - family-names: Byeon
+    given-names: Jiseop
+    affiliation: "The University of Texas at Austin"
+  - family-names: Qian
+    given-names: Kun
+    affiliation: "Unity AI Technologies"
+  - family-names: Jiao
+    given-names: Junfeng
+    affiliation: "The University of Texas at Austin"
+  - family-names: Claudel
+    given-names: Christian
+    affiliation: "The University of Texas at Austin"
+preferred-citation:
+  type: conference-paper
+  title: "EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction"
+  collection-title: "European Conference on Computer Vision (ECCV)"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.19004"
+  identifiers:
+    - type: other
+      value: "arXiv:2605.19004"
+      description: "arXiv preprint"
+  authors:
+    - family-names: Yehia
+      given-names: Ahmad
+    - family-names: Mohamed
+      given-names: Abduallah
+    - family-names: Wang
+      given-names: Tianyi
+    - family-names: Byeon
+      given-names: Jiseop
+    - family-names: Qian
+      given-names: Kun
+    - family-names: Jiao
+      given-names: Junfeng
+    - family-names: Claudel
+      given-names: Christian

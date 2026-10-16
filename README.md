@@ -1,6 +1,6 @@
 <div align="center">
 
-# EgoTraj: Real-World Multimodal Egocentric Human Trajectory Dataset
+# EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction
 
 ### Published to ECCV 2026
 
@@ -225,6 +225,33 @@ To examine how well the multimodal models generalize beyond the random-participa
 
 EgoTraj is distributed as two lightweight files plus the RGB video (hosted separately).
 
+### Quickstart (Python)
+
+```bash
+pip install git+https://github.com/yehiahmad/EgoTraj
+python -m egotraj egotraj_dataset.h5          # list every session with its length and duration
+```
+
+```python
+from egotraj import list_sessions, load_session, load_annotations
+
+h5 = "egotraj_dataset.h5"
+sessions = list_sessions(h5)                   # session names, oldest first
+s = load_session(h5, sessions[0])
+
+s.position          # (N, 3) metres, session-relative, Y is up
+s.ground_xz         # (N, 2) the trajectory on the ground plane
+s.gaze_direction    # (N, 3) unit gaze vectors
+s.timestamp         # (N,)   epoch seconds
+s.to_dataframe()    # the same session as a pandas DataFrame (pip install pandas)
+
+ann = load_annotations("egotraj_annotations.json", session=s.name)
+s.position[ann[0]["pose_idx"]]                 # where the wearer was for that annotation
+```
+
+The loader returns every array exactly as stored in the release; it does not resample,
+crop or split anything.
+
 ### `egotraj_dataset.h5`
 
 One HDF5 group per session (named by capture timestamp). Each session contains:
@@ -284,7 +311,8 @@ Trajectory-only mode works without video or annotations — just pass `--h5` and
 
 ## Citation
 
-If you find this work useful, please cite our paper:
+If you find this work useful, please cite our paper. GitHub's **Cite this repository** button,
+generated from [`CITATION.cff`](CITATION.cff), gives the same reference.
 
 ```bibtex
 @inproceedings{yehia2026egotraj,
