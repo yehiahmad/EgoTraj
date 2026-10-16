@@ -20,6 +20,10 @@ Download from [UT Box](https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph
 
 Data files are git-ignored (`*.h5`, `*.csv`). Never commit them.
 
+**Licenses differ:** the code in this repository is MIT, but the dataset is
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Do not use the data
+commercially, and do not attempt to identify participants.
+
 ## Loading it
 
 ```bash

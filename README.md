@@ -12,7 +12,8 @@ Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>
 <a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
 <a href="https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph"><img src="https://img.shields.io/badge/Dataset-Download-orange?logo=box&logoColor=white" alt="Dataset Download"></a>
 <img src="https://img.shields.io/badge/Conference-ECCV%202026-purple" alt="ECCV 2026">
-<img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+<img src="https://img.shields.io/badge/Code-MIT-green" alt="Code license: MIT">
+<img src="https://img.shields.io/badge/Data-CC%20BY--NC%204.0-lightgrey" alt="Data license: CC BY-NC 4.0">
 
 ---
 
@@ -330,7 +331,12 @@ generated from [`CITATION.cff`](CITATION.cff), gives the same reference.
 
 ## License
 
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+- **Code** (the `egotraj` loader, EgoViz and everything else in this repository): **MIT**. See
+  [LICENSE](LICENSE).
+- **Dataset** (`egotraj_dataset.h5`, `egotraj_annotations.json` and the video archives):
+  **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**, for non-commercial use.
+  The data was recorded from consenting participants under an IRB-approved protocol; do not
+  attempt to identify anyone in it.
 
 ---
 
