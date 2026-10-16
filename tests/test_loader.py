@@ -17,7 +17,7 @@ def _write_session(f, name, with_video=True):
     t = 1.76e9 + np.arange(N) / 30.0
     g["pose/timestamp"] = t
     g["pose/position"] = np.stack([np.linspace(0, 4, N), np.full(N, 1.7), np.linspace(0, 2, N)], 1)
-    g["pose/rotation"] = np.tile([0.0, 0.1, 0.0, 0.995], (N, 1))
+    g["pose/rotation"] = np.tile([0.995, 0.0, 0.1, 0.0], (N, 1))
     g["pose/velocity"] = np.ones((N, 3))
     g["pose/angular_velocity"] = np.zeros((N, 3))
     g["gaze/origin"] = np.zeros((N, 3))
@@ -48,7 +48,7 @@ def test_load_session_returns_arrays_as_stored(h5):
     s = load_session(h5, "20251020_163423")
     assert len(s) == N
     assert s.position.shape == (N, 3) and s.rotation.shape == (N, 4)
-    np.testing.assert_allclose(s.rotation[0], [0.0, 0.1, 0.0, 0.995])
+    np.testing.assert_allclose(s.rotation[0], [0.995, 0.0, 0.1, 0.0])
     assert s.has_video.dtype == bool and s.has_video.sum() == N - N // 5
     assert s.ground_xz.shape == (N, 2)
     np.testing.assert_allclose(s.ground_xz[:, 1], s.position[:, 2])

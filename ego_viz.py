@@ -1256,8 +1256,8 @@ def load_from_h5(h5_path, session):
     df = pd.DataFrame({
         "timestamp": ts,
         "x": pos[:, 0], "y": pos[:, 1], "z": pos[:, 2],
-        # quest pro order qx,qy,qz,qw; kept for save only, not used by the 2d view
-        "qx": rot[:, 0], "qy": rot[:, 1], "qz": rot[:, 2], "qw": rot[:, 3],
+        # stored order qw,qx,qy,qz; kept for save only, not used by the 2d view
+        "qw": rot[:, 0], "qx": rot[:, 1], "qy": rot[:, 2], "qz": rot[:, 3],
         "vx": vel[:, 0], "vy": vel[:, 1], "vz": vel[:, 2],
         "angv_x": angv[:, 0], "angv_y": angv[:, 1], "angv_z": angv[:, 2],
         "gaze_origin_wx": gorg[:, 0], "gaze_origin_wy": gorg[:, 1], "gaze_origin_wz": gorg[:, 2],
