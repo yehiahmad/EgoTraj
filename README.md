@@ -8,10 +8,9 @@ Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>
 
 <sup>1</sup>The University of Texas at Austin, Austin &nbsp;&nbsp; <sup>2</sup>AIDAChip Inc. &nbsp;&nbsp; <sup>3</sup>Unity AI Technologies
 
-<a href="https://arxiv.org/abs/2605.19004"><img src="https://img.shields.io/badge/arXiv-2605.19004-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Supplement-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Supplement PDF"></a>
+<a href="https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf"><img src="https://img.shields.io/badge/ECCV%202026-Paper-purple" alt="ECCV 2026 paper"></a>
+<a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Appendix-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Appendix PDF"></a>
 <a href="https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph"><img src="https://img.shields.io/badge/Dataset-Download-orange?logo=box&logoColor=white" alt="Dataset Download"></a>
-<img src="https://img.shields.io/badge/Conference-ECCV%202026-purple" alt="ECCV 2026">
 <img src="https://img.shields.io/badge/Code-MIT-green" alt="Code license: MIT">
 <img src="https://img.shields.io/badge/Data-CC%20BY--NC%204.0-lightgrey" alt="Data license: CC BY-NC 4.0">
 
@@ -312,18 +311,15 @@ Trajectory-only mode works without video or annotations — just pass `--h5` and
 
 ## Citation
 
-If you find this work useful, please cite our paper. GitHub's **Cite this repository** button,
+If you find this work useful, please cite our [ECCV 2026 paper](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf). GitHub's **Cite this repository** button,
 generated from [`CITATION.cff`](CITATION.cff), gives the same reference.
 
 ```bibtex
 @inproceedings{yehia2026egotraj,
   title     = {EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction},
   author    = {Yehia, Ahmad and Mohamed, Abduallah and Wang, Tianyi and Byeon, Jiseop and Qian, Kun and Jiao, Junfeng and Claudel, Christian},
-  booktitle = {European Conference on Computer Vision (ECCV)},
-  year      = {2026},
-  eprint    = {2605.19004},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CV}
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  year      = {2026}
 }
 ```
 

@@ -37,7 +37,7 @@ viz = ["pandas", "opencv-python", "pillow"]
 test = ["pytest"]
 
 [project.urls]
-Paper = "https://arxiv.org/abs/2605.19004"
+Paper = "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf"
 Repository = "https://github.com/yehiahmad/EgoTraj"
 Dataset = "https://utexas.box.com/s/kszvh58csvk8duu3qywqxp05a9fhsvph"
 
