@@ -8,6 +8,8 @@ url: "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf"
 keywords:
   - egocentric vision
   - human trajectory prediction
+  - world model
+  - navigation world model
   - eye gaze
   - head pose
   - Meta Quest Pro
