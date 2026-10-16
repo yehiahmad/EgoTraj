@@ -7,7 +7,7 @@ Layout of ``egotraj_dataset.h5``: one group per session, named by capture timest
 (for example ``20251020_163423``), holding
 
     pose/position          (N, 3)  metres, session-relative, Y is up
-    pose/rotation          (N, 4)  head orientation quaternion
+    pose/rotation          (N, 4)  head orientation quaternion, order (w, x, y, z)
     pose/velocity          (N, 3)
     pose/angular_velocity  (N, 3)
     pose/timestamp         (N,)    epoch seconds
