@@ -6,7 +6,7 @@
 
 Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>1</sup>, Jiseop Byeon<sup>1</sup>, Kun Qian<sup>3</sup>, Junfeng Jiao<sup>1</sup>, Christian Claudel<sup>1</sup>
 
-<sup>1</sup>The University of Texas at Austin, Austin &nbsp;&nbsp; <sup>2</sup>AIDAChip Inc. &nbsp;&nbsp; <sup>3</sup>Unity AI Technologies
+<sup>1</sup>The University of Texas at Austin, Austin &nbsp;&nbsp; <sup>2</sup>Meta Reality Labs, USA. &nbsp;&nbsp; <sup>3</sup>Unity AI Technologies
 
 <a href="https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf"><img src="https://img.shields.io/badge/ECCV%202026-Paper-purple" alt="ECCV 2026 paper"></a>
 <a href="assets/paper/EgoTraj_Real-World_Egocentric_Human_Trajectory_Dataset_for_Multimodal_Prediction.pdf"><img src="https://img.shields.io/badge/Paper%20%2B%20Appendix-PDF-red?logo=adobeacrobatreader&logoColor=white" alt="Paper + Appendix PDF"></a>
