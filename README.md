@@ -315,8 +315,7 @@ Trajectory-only mode works without video or annotations — just pass `--h5` and
 
 ## Citation
 
-If you find this work useful, please cite our [ECCV 2026 paper](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf). GitHub's **Cite this repository** button,
-generated from [`CITATION.cff`](CITATION.cff), gives the same reference.
+If you find this work useful, please cite our [ECCV 2026 paper](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf). 
 
 ```bibtex
 @inproceedings{yehia2026egotraj,
