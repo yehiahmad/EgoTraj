@@ -19,7 +19,8 @@ authors = [
     { name = "Christian Claudel" },
 ]
 keywords = [
-    "egocentric", "trajectory-prediction", "human-motion", "gaze", "eye-tracking",
+    "egocentric", "trajectory-prediction", "world-model", "navigation-world-model",
+    "human-motion", "gaze", "eye-tracking",
     "head-pose", "dataset", "meta-quest-pro", "multimodal", "eccv-2026",
 ]
 classifiers = [
