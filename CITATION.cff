@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you use EgoTraj, please cite the paper below."
+message: "If you use EgoTraj, please cite our ECCV 2026 paper below."
 title: "EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction"
 type: dataset
 license: CC-BY-NC-4.0
 repository-code: "https://github.com/yehiahmad/EgoTraj"
-url: "https://arxiv.org/abs/2605.19004"
+url: "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf"
 keywords:
   - egocentric vision
   - human trajectory prediction
@@ -38,13 +38,11 @@ authors:
 preferred-citation:
   type: conference-paper
   title: "EgoTraj: Real-World Egocentric Human Trajectory Dataset for Multimodal Prediction"
-  collection-title: "European Conference on Computer Vision (ECCV)"
+  collection-title: "Proceedings of the European Conference on Computer Vision (ECCV)"
+  conference:
+    name: "European Conference on Computer Vision (ECCV 2026)"
   year: 2026
-  url: "https://arxiv.org/abs/2605.19004"
-  identifiers:
-    - type: other
-      value: "arXiv:2605.19004"
-      description: "arXiv preprint"
+  url: "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf"
   authors:
     - family-names: Yehia
       given-names: Ahmad

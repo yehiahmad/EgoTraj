@@ -5,7 +5,7 @@ Guidance for coding agents working with EgoTraj.
 ## What this repository is
 
 EgoTraj is a real-world egocentric human trajectory dataset recorded with Meta Quest Pro
-headsets in urban environments (ECCV 2026, [arXiv:2605.19004](https://arxiv.org/abs/2605.19004)).
+headsets in urban environments ([ECCV 2026](https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14919.pdf)).
 Each session has 6-DoF head pose, 3D eye gaze, privacy-blurred RGB video and per-second scene
 annotations. This repository holds the loader, the EgoViz dashboard, the paper and its figures.
 The data itself is downloaded separately.
