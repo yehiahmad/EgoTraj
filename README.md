@@ -16,7 +16,7 @@ Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>
 
 ---
 
-<img src="assets/gifs/egocnetric_informed_gaze_human_motion_prediction_objective.gif" width="100%" alt="EgoTraj Overview: Egocentric gaze-informed human motion prediction">
+<img src="assets/gifs/egotraj_eccv2026_intro.gif" width="100%" alt="EgoTraj ECCV 2026 introduction video">
 
 </div>
 
@@ -26,6 +26,10 @@ Ahmad Yehia<sup>1,★</sup>, Abduallah Mohamed<sup>2,★</sup>, Tianyi Wang<sup>
 
 <div align="center">
 <img src="assets/figures/egotraj_intro.png" width="100%" alt="EgoTraj Protocol Design, Multimodal Capture, and Applications">
+</div>
+
+<div align="center">
+<img src="assets/gifs/egocnetric_informed_gaze_human_motion_prediction_objective.gif" width="100%" alt="EgoTraj Overview: Egocentric gaze-informed human motion prediction">
 </div>
 
 ### Why EgoTraj?
